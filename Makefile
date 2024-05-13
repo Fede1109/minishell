@@ -3,16 +3,16 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: pcervill <pcervill@student.42madrid.com    +#+  +:+       +#+         #
+#    By: fdiaz-gu <fdiaz-gu@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/12/12 09:52:26 by pcervill          #+#    #+#              #
-#    Updated: 2024/04/24 12:22:04 by pcervill         ###   ########.fr        #
+#    Updated: 2024/05/13 11:55:21 by fdiaz-gu         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 CC			=	gcc
 
-CFLAGS		= -Wall -Werror -Wextra -g3 #-fsanitize=address
+CFLAGS		= -Wall -Werror -Wextra #-g3 -fsanitize=address
 
 UNAME		:=	$(shell uname -s)
 ifeq ($(UNAME),Darwin)

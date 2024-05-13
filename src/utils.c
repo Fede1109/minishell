@@ -6,7 +6,7 @@
 /*   By: fdiaz-gu <fdiaz-gu@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/08 12:24:53 by fdiaz-gu          #+#    #+#             */
-/*   Updated: 2024/05/06 15:08:49 by fdiaz-gu         ###   ########.fr       */
+/*   Updated: 2024/05/13 11:27:27 by fdiaz-gu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -50,6 +50,7 @@ char	**dup_matrix(char **str)
 		dup[i] = ft_strdup(str[i]);
 		i++;
 	}
+	
 	return (dup);
 }
 

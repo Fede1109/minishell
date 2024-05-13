@@ -6,7 +6,7 @@
 /*   By: fdiaz-gu <fdiaz-gu@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/13 17:20:34 by fdiaz-gu          #+#    #+#             */
-/*   Updated: 2024/04/22 16:05:22 by fdiaz-gu         ###   ########.fr       */
+/*   Updated: 2024/05/13 11:26:00 by fdiaz-gu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -42,7 +42,10 @@ char	*ft_joinvar(char *str)
 			ft_strlen(str) - ft_strlen(ft_strchr(str, '=')));
 	aux = ft_strjoin(var_name, "=\"");
 	aux2 = ft_trim_quotes(ft_strchr(str, '=') + 1);
-	join = ft_strjoin(aux, aux2);
+	if (aux2)
+		join = ft_strjoin(aux, aux2);
+	else
+		join = ft_strdup(aux);
 	join_2 = ft_strjoin(join, "\"");
 	free(str);
 	str = join_2;

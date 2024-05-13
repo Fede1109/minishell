@@ -6,7 +6,7 @@
 /*   By: fdiaz-gu <fdiaz-gu@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/21 11:46:02 by pcervill          #+#    #+#             */
-/*   Updated: 2024/04/23 16:37:34 by fdiaz-gu         ###   ########.fr       */
+/*   Updated: 2024/05/13 11:15:58 by fdiaz-gu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,6 +29,7 @@ int	main(int argc, char **argv, char **envp)
 		exit(0);
 	}
 	aux = dup_matrix(envp);
+	// exit(1);
 	increment_shlvl(aux);
 	tools.env = dup_matrix(aux);
 	tools.exp = dup_matrix(aux);
